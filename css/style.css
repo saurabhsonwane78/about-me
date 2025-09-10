@@ -2873,6 +2873,7 @@ aside.f_widget.news_widget {
   border-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
+  height: 450px;
   margin-bottom: 30px; }
   .projects_item .projects_text {
     position: absolute;
