@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Demo Showcase</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Saurabh Sonwane</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* --- Section Styling --- */
+    section {
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #222;
+      position: relative;
+      font-weight: 700;
+    }
+
+    h2:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #4a6cf7, #6a11cb);
+      margin: 15px auto;
+      border-radius: 2px;
+    }
+
+    /* --- Hero Section --- */
+    .hero-section {
+      color: black;
+      padding: 154px 20px 0px 20px;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+      margin-bottom: 60px;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    /* --- Video + Info --- */
+    .demo-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      margin-bottom: 60px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 0.5px solid #8893ff;
+    }
+
+    .demo-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .demo-video {
+      flex: 1;
+      min-width: 300px;
+      position: relative;
+    }
+
+    .demo-video video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .demo-video:hover video {
+      transform: scale(1.02);
+    }
+
+    .demo-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .demo-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: black;
+      font-weight: 600;
+    }
+
+    .demo-info p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    /* Brand Logos */
+    .brand-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .brand-logo {
+      background: #f0f4ff;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: black;
+      box-shadow: 0 3px 10px rgba(74, 108, 247, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .brand-logo:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(74, 108, 247, 0.2);
+    }
+
+    /* --- Work Section --- */
+    .work-section {
+      background: white;
+      border-radius: 20px;
+      padding: 50px 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      margin-bottom: 60px;
+    }
+
+    .work-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .work-item {
+      background: #f8faff;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #4a6cf7;
+      transition: all 0.3s ease;
+    }
+
+    .work-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(74, 108, 247, 0.1);
+    }
+
+    .work-item h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #1a2a6c;
+      display: flex;
+      align-items: center;
+    }
+
+    .work-item h3 i {
+      margin-right: 10px;
+      color: #4a6cf7;
+    }
+
+    .work-item p {
+      color: #555;
+      margin: 0;
+    }
+
+    /* --- Impact Section --- */
+    .impact-section {
+      text-align: center;
+      background: linear-gradient(135deg, #1a2a6c 0%, #2a3a7c 100%);
+      color: white;
+      padding: 80px 20px;
+      border-radius: 30px;
+      margin-bottom: 60px;
+    }
+
+    .impact-section h2 {
+      color: white;
+    }
+
+    .impact-section h2:after {
+      background: rgba(255,255,255,0.5);
+    }
+
+    .impact-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      opacity: 0.9;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    /* --- CTA Section --- */
+    .cta-section {
+      text-align: center;
+      padding: 15px 20px 40px 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(to right, #4a6cf7, #6a11cb);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(74, 108, 247, 0.3);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(74, 108, 247, 0.4);
+      color: white;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      .demo-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+      
+      .hero-section h1 {
+        font-size: 2.2rem;
+      }
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      .stats {
+        flex-direction: column;
+      }
+      
+      .work-items {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Keep your nav here -->
+  <header class="header_area">
+    <div class="main_menu" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container box_1620">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html">Saurabh Sonwane</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto" >
+              <li class="nav-item active" ><a class="nav-link" href="index.html" ><span id="nav_btn_hover">Home</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#projects_sec"><span id="nav_btn_hover">Projects</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#aboutsection"><span id="nav_btn_hover">Skills</span></a>
+              <li class="nav-item"><a class="nav-link" href="index.html#qualification"><span id="nav_btn_hover">Expericence</span></a>
+              <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCg7vcTZy_XpqHYOp7EDzkqw" target="_blank"><span id="nav_btn_hover">My Youtube Channel</span></a>
+              <li class="nav-item"><a class="nav-link" href="index.html#contactme"><span id="nav_btn_hover">Contact</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>AI-Powered Chat360 Bot</h1>
+      <p>Revolutionizing customer engagement for leading global brands with cutting-edge conversational AI technology</p>
+    </div>
+  </section>
+
+  <!-- Section 1: Bot Demo -->
+  <section class="demo container">
+    <div class="demo-section">
+      <div class="demo-video">
+        <video controls preload="metadata">
+          <source src="img/projects/1759557507957745 (2).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="demo-info">
+        <h3>Intelligent Conversational AI</h3>
+        <p>
+          A sophisticated conversational AI bot designed to automate customer support and engagement for leading global brands. It seamlessly handles queries across WhatsApp, website chat, and voice channels, ensuring fast, reliable, and personalized interactions for millions of users.
+        </p>
+        <div class="brand-logos">
+          <span class="brand-logo">Audi</span>
+          <span class="brand-logo">ITC</span>
+          <span class="brand-logo">Jeep</span>
+          <span class="brand-logo">JCB</span>
+          <span class="brand-logo">Motilal Oswal</span>
+          <span class="brand-logo">JM Financial</span>
+          <span class="brand-logo">Suzuki</span>
+          <span class="brand-logo">Hexa Health</span>
+          <span class="brand-logo">TAFE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Work & Deployment -->
+  <section class="work-section container">
+    <h2>Technical Implementation</h2>
+    <div class="work-items">
+      <div class="work-item">
+        <h3><i class="fas fa-server"></i> Scalable Backend Architecture</h3>
+        <p>Built agent performance & attendance system for 10K+ agents, boosting efficiency and cutting reporting overhead by 30%.</p>
+      </div>
+      <div class="work-item">
+        <h3><i class="fas fa-exchange-alt"></i>Integration </h3>
+        <p>Built Chat360’s Bitrix24 integration with live chat and campaign support, enhancing CRM-driven customer engagement.</p>
+      </div>
+      <div class="work-item">
+        <h3><i class="fas fa-shield-alt"></i> Lead Creation</h3>
+        <p>Integrated chatbot-to-CRM lead capture for automating thousands of enquiries and removing manual data entry.</p>
+      </div>
+      <div class="work-item">
+        <h3><i class="fas fa-cloud-upload-alt"></i> Services</h3>
+        <p>Optimized asynchronous cron jobs in Django, improving task execution speed and scalability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Impact -->
+  <section class="impact-section">
+    <div class="container">
+      <h2>Business Impact</h2>
+      <p>
+        The AI-Powered Chat360 Bot has transformed customer engagement for enterprise clients, delivering measurable improvements in response times, customer satisfaction, and operational efficiency across all integrated platforms.
+      </p>
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-number">10M+</div>
+          <div class="stat-label">Monthly Interactions</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Availability</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">350+</div>
+          <div class="stat-label">Enterprise Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Discover more of my projects by clicking the link below</h2>
+      <a href="index.html#projects_sec" class="cta-button">Discover More</a>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope/isotope-min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+  <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
